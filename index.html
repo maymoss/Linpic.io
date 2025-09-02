@@ -1,14 +1,86 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="zh-TW">
 <head>
-    <meta charset='utf-8' name="viewport" content="width=device-width, initial-scale=1.0" http-equiv='X-UA-Compatible' content='IE=edge'>
-    <link rel="icon" href="https://maymoss.github.io/test.github.io/9ghfo-83t22-001.ico" type="image/png" sizes="32x32">
-    <title>久久天地</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="icon" href="https://maymoss.github.io/test.github.io/9ghfo-83t22-001.ico" type="image/png" sizes="32x32">
+  <title>九九天地</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <style>
+    body { 
+      font-family: '微軟正黑體', 'Microsoft JhengHei', sans-serif; 
+      line-height: 1.6; 
+      padding: 20px; 
+      background-color: #f8f9fa;
+    }
+    .result-box { 
+      border: 1px solid #dee2e6; 
+      padding: 20px; 
+      margin-bottom: 20px; 
+      border-radius: 8px; 
+      background-color: white;
+      box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    }
+    h2 { 
+      color: #333; 
+      border-bottom: 1px solid #eee; 
+      padding-bottom: 10px; 
+      margin-bottom: 15px;
+    }
+    strong { color: #0d6efd; }
+    .form-label { font-weight: 500; }
+    .warning { color: #dc3545; font-weight: bold; }
+    .info { color: #198754; font-weight: bold; }
+    .required-field::after {
+      content: " *";
+      color: #dc3545;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th, td {
+      border: 1px solid #dee2e6;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f8f9fa;
+    }
+  </style>
 </head>
 <body>
-    
+  <div id="app">
+    <div class="container">
+      <h1 class="text-center mb-4">專案作品</h1>
+      
+      <!-- 六壬趣味算命系統 -->
+      <div class="result-box">
+        <h2>六壬趣味算命系統</h2>
+        <div class="mb-3">
+          <p>
+            WEB展示網址：<a href="https://maymoss.github.io/test.github.io/liurenpro.html" target="_blank" class="btn btn-outline-primary">
+              https://maymoss.github.io/test.github.io/liurenpro.html
+            </a>
+          </p>
+          <p>
+            安卓展示：<a href="https://maymoss.github.io/test.github.io/quweishensuanliuren.html" target="_blank" class="btn btn-outline-primary">
+              https://maymoss.github.io/test.github.io/quweishensuanliuren.html
+            </a>
+          </p>
+        </div>
+      </div>
+      
+  </div>
+
 </body>
+<footer>
+  <div class="container my-auto">
+    <div class="text-center my-auto copyright">
+      <p>© <span>Copyright 2025</span> <strong class="px-1 sitename">Brooks</strong> <span>All Rights Reserved</span></p>
+    </div>
+  </div>
+</footer>
 </html>
