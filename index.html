@@ -1,187 +1,173 @@
-
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="https://maymoss.github.io/test.github.io/9ghfo-83t22-001.ico" type="image/png" sizes="32x32">
-  <title>九九天地</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-  <style>
-    body { 
-      font-family: '微軟正黑體', 'Microsoft JhengHei', sans-serif; 
-      line-height: 1.6; 
-      padding: 20px; 
-      background-color: #f8f9fa;
-    }
-    .result-box { 
-      border: 1px solid #dee2e6; 
-      padding: 20px; 
-      margin-bottom: 20px; 
-      border-radius: 8px; 
-      background-color: white;
-      box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-    }
-    h2 { 
-      color: #333; 
-      border-bottom: 1px solid #eee; 
-      padding-bottom: 10px; 
-      margin-bottom: 15px;
-    }
-    strong { color: #0d6efd; }
-    .form-label { font-weight: 500; }
-    .warning { color: #dc3545; font-weight: bold; }
-    .info { color: #198754; font-weight: bold; }
-    .required-field::after {
-      content: " *";
-      color: #dc3545;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 15px 0;
-    }
-    th, td {
-      border: 1px solid #dee2e6;
-      padding: 8px;
-      text-align: left;
-    }
-    th {
-      background-color: #f8f9fa;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://maymoss.github.io/test.github.io/9ghfo-83t22-001.ico" type="image/png" sizes="32x32">
+  <title>九九天地</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <style>
+    body { 
+      font-family: '微軟正黑體', 'Microsoft JhengHei', sans-serif; 
+      line-height: 1.6; 
+      padding: 20px; 
+      background-color: #f8f9fa;
+    }
+    .result-box { 
+      border: 1px solid #dee2e6; 
+      padding: 20px; 
+      margin-bottom: 20px; 
+      border-radius: 8px; 
+      background-color: white;
+      box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    }
+    h2 { 
+      color: #333; 
+      border-bottom: 1px solid #eee; 
+      padding-bottom: 10px; 
+      margin-bottom: 15px;
+    }
+    strong { color: #0d6efd; }
+    .form-label { font-weight: 500; }
+    .warning { color: #dc3545; font-weight: bold; }
+    .info { color: #198754; font-weight: bold; }
+    .required-field::after {
+      content: " *";
+      color: #dc3545;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th, td {
+      border: 1px solid #dee2e6;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f8f9fa;
+    }
+    .responsive-img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
 </head>
 <body>
 	<div id="app">
 		<div class="container">
-			<h1 class="text-center mb-4"><img src="https://maymoss.github.io/Linpic.io/99-removebg-preview.png" alt="九九天地" style="width:150px;height:150px;vertical-align:middle;margin-right:10px;"></h1>
+			<h1 class="text-center mb-4"><img src="https://maymoss.github.io/Linpic.io/99-removebg-preview.png" alt="九九天地" class="img-fluid" style="max-width:150px;height:auto;vertical-align:middle;margin-right:10px;"></h1>
 
-			<!-- 摘星特效包 -->
 			<div class="result-box">
 				<h2>摘星特效包</h2>
 				<div class="mb-3">
 					<p>
 						說明：
-						<ol>1.版本歸原作者(Brooks99)所有</ol>
-						<ol>2.此程式為研究學習設計思想和原理為目的，絕沒有故意侵權或惡意抄襲、篡改遊戲內容！</ol>
-						<ol>3.裡面包裝之特效皆為廣大網友以及盟友無私奉獻，故嚴禁用於任何商業行為。</ol>
+						<ol><li>版本歸原作者(Brooks99)所有</li>
+						<li>此程式為研究學習設計思想和原理為目的，絕沒有故意侵權或惡意抄襲、篡改遊戲內容！</li>
+						<li>裡面包裝之特效皆為廣大網友以及盟友無私奉獻，故嚴禁用於任何商業行為。</li></ol>
 					</p>
 					<p>
 						版本：
 						<ol>
-							.359 特效->黑色介面。調整獨立下拉式選項
-							<ol> 特校->黑色介面->新增完整介面包</ol>
-							<ol> 增加 王表(需手動點更新，需先請有權限的人從網路更新後，程式的才會更新)</ol>
+							<li>.359 特效->黑色介面。調整獨立下拉式選項
+							<ul>
+								<li>特校->黑色介面->新增完整介面包</li>
+								<li>增加 王表(需手動點更新，需先請有權限的人從網路更新後，程式的才會更新)</li>
+							</ul></li>
+							<li>.360 調整->取消錯誤顯示，不在顯示序號以及詳細錯誤碼</li>
+							<li>.361 特效->箭矢特效更換為橘色特效</li>
+							<li>.362 修正->讀取EXCEL錯誤之問題</li>
+							<li>
+								.363 增加->木乃伊明顯化
+								<ul>
+									<li>聖界_魔屏狀態中文字</li>
+									<li>魔法、狀態圖示更新</li>
+								</ul>
+							</li>
+							<li>.364 增加->精準射擊中文明顯化</li>
 						</ol>
-						<ol>.360 調整->取消錯誤顯示，不在顯示序號以及詳細錯誤碼</ol>
-						<ol>.361 特效->箭矢特效更換為橘色特效</ol>
-						<ol>.362 修正->讀取EXCEL錯誤之問題</ol>
-						<ol>
-							.363 增加->木乃伊明顯化
-							<ol> 聖界_魔屏狀態中文字</ol>
-							<ol> 魔法、狀態圖示更新</ol>
-						</ol>
-						<ol>.364 增加->精準射擊中文明顯化</ol>
 					</p>
 					<p>
-						<ol><h1><a href="https://drive.google.com/file/d/1TKeU7ebkPkYXQiQ4vIOcVOVvRvUgd8pe/view?usp=drive_link" target="_blank">特效包下載....</a></h1></ol>
-						<ol><h1><a href="https://www.tiktok.com/@user19451629863815/video/7542379925689437448" target="_blank">教學檔....</a></h1></ol>
+						<ul>
+							<li><h1><a href="https://drive.google.com/file/d/1TKeU7ebkPkYXQiQ4vIOcVOVvRvUgd8pe/view?usp=drive_link" target="_blank">特效包下載....</a></h1></li>
+							<li><h1><a href="https://www.tiktok.com/@brooks99miao/video/7542379925689437448" target="_blank">教學檔....</a></h1></li>
+						</ul>
 					</p>
 				</div>
 			</div>
-		<div class="row">
+			
+			<div class="row">
 
-			<!-- 水元 -->
-			<div class="text-center col-md-4 col-lg-4" style="min-width: 400px;">
-				<h2>水元</h2>
-				<div class="mb-3">
-					<p>
-						<img src="https://maymoss.github.io/Linpic.io/水元.gif" alt="水元" style="width:400px;height:400px;vertical-align:middle;margin-right:10px;">
-					</p>
+				<div class="col-12 col-sm-6 col-md-4 mb-4">
+					<div class="text-center">
+						<h2>水元</h2>
+						<img src="https://maymoss.github.io/Linpic.io/水元.gif" alt="水元" class="responsive-img">
+					</div>
 				</div>
-			</div>
-			
-			<!-- 聖界 -->
-			<div class="text-center col-md-4 col-lg-4" style="min-width: 400px;">
-				<h2>聖界</h2>
-				<div class="mb-3">
-					<p>
-						<img src="https://maymoss.github.io/Linpic.io/聖界.gif" alt="聖界" style="width:400px;height:400px;vertical-align:middle;margin-right:10px;">
-					</p>
+				
+				<div class="col-12 col-sm-6 col-md-4 mb-4">
+					<div class="text-center">
+						<h2>聖界</h2>
+						<img src="https://maymoss.github.io/Linpic.io/聖界.gif" alt="聖界" class="responsive-img">
+					</div>
 				</div>
-			</div>
-			
-			<!-- 木乃伊 -->
-			<div class="text-center col-md-4 col-lg-4" style="min-width: 400px;">
-				<h2>木乃伊</h2>
-				<div class="mb-3">
-					<p>
-						<img src="https://maymoss.github.io/Linpic.io/木乃伊.gif" alt="木乃伊" style="width:400px;height:400px;vertical-align:middle;margin-right:10px;">
-					</p>
+				
+				<div class="col-12 col-sm-6 col-md-4 mb-4">
+					<div class="text-center">
+						<h2>木乃伊</h2>
+						<img src="https://maymoss.github.io/Linpic.io/木乃伊.gif" alt="木乃伊" class="responsive-img">
+					</div>
 				</div>
-			</div>
-			
-			<!-- 魔屏 -->
-			<div class="text-center col-md-4 col-lg-4" style="min-width: 400px;">
-				<h2>魔屏</h2>
-				<div class="mb-3">
-					<p>
-						<img src="https://maymoss.github.io/Linpic.io/魔屏.gif" alt="魔屏" style="width:400px;height:400px;vertical-align:middle;margin-right:10px;">
-					</p>
+				
+				<div class="col-12 col-sm-6 col-md-4 mb-4">
+					<div class="text-center">
+						<h2>魔屏</h2>
+						<img src="https://maymoss.github.io/Linpic.io/魔屏.gif" alt="魔屏" class="responsive-img">
+					</div>
 				</div>
-			</div>
-			
-			<!-- 魔法圖示 -->
-			<div class="text-center col-md-4 col-lg-4" style="min-width: 400px;">
-				<h2>魔法圖示</h2>
-				<div class="mb-3">
-					<p>
-						<img src="https://maymoss.github.io/Linpic.io/魔法圖示.webp" alt="魔法圖示" style="width:400px;height:400px;vertical-align:middle;margin-right:10px;">
-					</p>
+				
+				<div class="col-12 col-sm-6 col-md-4 mb-4">
+					<div class="text-center">
+						<h2>魔法圖示</h2>
+						<img src="https://maymoss.github.io/Linpic.io/魔法圖示.webp" alt="魔法圖示" class="responsive-img">
+					</div>
 				</div>
-			</div>
-			
-			<!-- 魔法封印 -->
-			<div class="text-center col-md-4 col-lg-4" style="min-width: 400px;">
-				<h2>魔法封印</h2>
-				<div class="mb-3">
-					<p>
-						<img src="https://maymoss.github.io/Linpic.io/魔法封印.gif" alt="魔法封印" style="width:400px;height:400px;vertical-align:middle;margin-right:10px;">
-					</p>
+				
+				<div class="col-12 col-sm-6 col-md-4 mb-4">
+					<div class="text-center">
+						<h2>魔法封印</h2>
+						<img src="https://maymoss.github.io/Linpic.io/魔法封印.gif" alt="魔法封印" class="responsive-img">
+					</div>
 				</div>
-			</div>
-			
-			<!-- 精準射擊中文 -->
-			<div class="text-center col-md-4 col-lg-4" style="min-width: 400px;">
-				<h2>精準射擊中文</h2>
-				<div class="mb-3">
-					<p>
-						<img src="https://maymoss.github.io/Linpic.io/精準射擊中文.gif" alt="精準射擊中文" style="width:400px;height:400px;vertical-align:middle;margin-right:10px;">
-					</p>
+				
+				<div class="col-12 col-sm-6 col-md-4 mb-4">
+					<div class="text-center">
+						<h2>精準射擊中文</h2>
+						<img src="https://maymoss.github.io/Linpic.io/精準射擊中文.gif" alt="精準射擊中文" class="responsive-img">
+					</div>
 				</div>
-			</div>
-			
-			<!-- 黑色介面_完整版 -->
-			<div class="text-center col-md-4 col-lg-4" style="min-width: 400px;">
-				<h2>黑色介面_完整版</h2>
-				<div class="mb-3">
-					<p>
-						<img src="https://maymoss.github.io/Linpic.io/黑色介面_完整版.jpg" alt="黑色介面_完整版" style="width:400px;height:400px;vertical-align:middle;margin-right:10px;">
-					</p>
+				
+				<div class="col-12 col-sm-6 col-md-4 mb-4">
+					<div class="text-center">
+						<h2>黑色介面_完整版</h2>
+						<img src="https://maymoss.github.io/Linpic.io/黑色介面_完整版.jpg" alt="黑色介面_完整版" class="responsive-img">
+					</div>
 				</div>
 			</div>
 		</div>
-
 	</div>
-		</div>
 
 </body>
 <footer>
-  <div class="container my-auto">
-    <div class="text-center my-auto copyright">
-      <p>© <span>Copyright 2025</span> <strong class="px-1 sitename">Brooks</strong> <span>All Rights Reserved</span></p>
-    </div>
-  </div>
+  <div class="container my-auto">
+    <div class="text-center my-auto copyright">
+      <p>© <span>Copyright 2025</span> <strong class="px-1 sitename">Brooks</strong> <span>All Rights Reserved</span></p>
+    </div>
+  </div>
 </footer>
 </html>
